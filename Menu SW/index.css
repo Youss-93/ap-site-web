@@ -1,0 +1,159 @@
+/* Menu Muay Thai.css */
+
+/* 1. Imports et Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+
+@font-face {
+  font-family: "Sandra";
+  src: url(/fonts/Sandra.ttf) format("truetype");
+  /* Ajout d'un fallback de sécurité si la police ne charge pas */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2. Variables (pour changer le rouge facilement partout) */
+:root {
+  --primary-red: #d61c1c; /* Rouge intense style Muay Thai */
+  --text-white: #eeeeee;
+  --overlay-dark: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Un peu plus sombre pour la lisibilité */
+}
+
+/* 3. Reset Général */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif; /* Police par défaut propre */
+}
+
+/* 4. Header & Background */
+header {
+  background-image: linear-gradient(var(--overlay-dark), var(--overlay-dark)),
+    url("../img/Muay_Thai_Fight_Us_Vs_Burma_(80668065).jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Effet de parallaxe sympa */
+  position: relative;
+}
+
+/* 5. Navigation (.principale) */
+.principale {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Écarte le logo et le menu */
+  padding: 20px 50px;
+  width: 100%;
+}
+
+/* Logo */
+.image-logo {
+  height: 150px; /* Taille ajustée */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Menu (ul) */
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Espace entre les boutons */
+}
+
+ul li a {
+  text-decoration: none; /* Plus propre sans soulignement par défaut */
+  padding: 10px 25px;
+  text-transform: uppercase;
+  color: var(--primary-red); /* Le ROUGE demandé */
+  font-weight: bold;
+  font-family: "Sandra", sans-serif;
+  letter-spacing: 1px;
+  border: 1px solid transparent; /* Pour éviter le décalage au hover */
+  transition: all 0.3s ease; /* Transition plus rapide et fluide */
+  border-radius: 4px;
+}
+
+ul li a:hover {
+  background: var(--primary-red);
+  color: var(--text-white);
+  border-color: var(--primary-red);
+  box-shadow: 0 0 10px rgba(214, 28, 28, 0.5); /* Effet de lueur */
+}
+
+/* 6. Titre Central */
+.titre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrage parfait */
+  text-align: center;
+  width: 90%; /* Empêche le texte de toucher les bords sur petit écran */
+}
+
+.titre h1 {
+  color: var(--primary-red); /* Le ROUGE demandé */
+  font-size: 80px;
+  font-family: "Abril Fatface", cursive;
+  margin-bottom: 20px;
+  /* Ombre pour détacher le texte rouge du fond sombre */
+  text-shadow: 2px 2px 0px #000;
+  line-height: 1.1;
+}
+
+.titre p {
+  color: var(--text-white);
+  font-size: 32px;
+  font-family: "Sandra", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* 7. Footer */
+footer {
+  padding: 30px 0;
+  color: var(--text-white);
+  background: #111; /* Noir pas totalement noir, plus élégant */
+  text-align: center;
+  font-size: 14px;
+}
+
+footer .contenu-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* 8. Responsive Design (Mobile) */
+@media screen and (max-width: 768px) {
+  .principale {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image-logo {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .titre h1 {
+    font-size: 50px; /* Texte plus petit sur mobile */
+  }
+
+  .titre p {
+    font-size: 20px;
+  }
+}

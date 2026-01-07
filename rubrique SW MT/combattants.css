@@ -1,0 +1,101 @@
+/* combattants.css */
+.card-YB,
+.card-SS,
+.card-Saenchai {
+  display: flex;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #111;
+  border-left: 5px solid #ff0000;
+  transition: transform 0.3s;
+}
+
+.card-YB:hover,
+.card-SS:hover,
+.card-Saenchai:hover {
+  transform: translateX(10px);
+  box-shadow: -5px 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.img-YB,
+.img-SS,
+.img-Saenchai {
+  flex: 0 0 250px;
+  background: #222;
+}
+
+.img-YB img,
+.img-SS img,
+.img-Saenchai img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details-YB,
+.details-SS,
+.details-Saenchai {
+  padding: 25px;
+  color: #eee;
+}
+
+h3 {
+  font-family: "Sandra";
+  color: #ff0000;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+/* Style du Header Uniformisé */
+/* --- STYLE DU HEADER ET DE LA LISTE --- */
+
+.top-page {
+  background-color: #000000;
+  border-bottom: 2px solid #ff0000; /* Ligne rouge sous le menu */
+  padding: 10px 0;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image-logo {
+  height: 120px;
+  display: block;
+}
+
+/* On cible l'UL pour enlever les puces et mettre en ligne */
+.nav ul {
+  list-style-type: none; /* SUPPRIME LES PUCES */
+  display: flex; /* ALIGNE HORIZONTALEMENT */
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* ESPACE ENTRE LES LIENS */
+}
+
+.nav li {
+  margin: 0;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #ff0000; /* ROUGE */
+  font-family: "Sandra", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+}
+
+/* Effet au survol */
+.nav li a:hover {
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 5px;
+}

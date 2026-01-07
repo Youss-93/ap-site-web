@@ -1,0 +1,99 @@
+body {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Abril Fatface";
+  color: #ff0000;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.form input,
+.form textarea {
+  padding: 15px;
+  background: #222;
+  border: 1px solid #ff0000;
+  color: #fff;
+  font-family: "Montserrat";
+}
+
+.form input[type="submit"] {
+  background: #ff0000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form input[type="submit"]:hover {
+  background: #fff;
+  color: #ff0000;
+}
+/* Style du Header Uniformisé */
+/* --- STYLE DU HEADER ET DE LA LISTE --- */
+
+.top-page {
+  background-color: #000000;
+  border-bottom: 2px solid #ff0000; /* Ligne rouge sous le menu */
+  padding: 10px 0;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image-logo {
+  height: 120px;
+  display: block;
+}
+
+/* On cible l'UL pour enlever les puces et mettre en ligne */
+.nav ul {
+  list-style-type: none; /* SUPPRIME LES PUCES */
+  display: flex; /* ALIGNE HORIZONTALEMENT */
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* ESPACE ENTRE LES LIENS */
+}
+
+.nav li {
+  margin: 0;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #ff0000; /* ROUGE */
+  font-family: "Sandra", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+}
+
+/* Effet au survol */
+.nav li a:hover {
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 5px;
+}

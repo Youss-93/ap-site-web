@@ -1,0 +1,94 @@
+body {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.top-page {
+  background: #000;
+  border-bottom: 2px solid #ff0000;
+}
+
+/* Style unique pour tous tes tableaux */
+.tableau-poings,
+.tableau-pieds,
+.tableau-genoux,
+.tableau-coudes,
+.tableau-parades {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 50px auto;
+  background-color: #f8f8f8; /* Fond clair pour que les images ressortent */
+  color: #000;
+}
+
+caption {
+  color: #ff0000;
+  font-family: "Sandra", sans-serif;
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+td {
+  border: 1px solid #333;
+  padding: 15px;
+  text-align: center;
+}
+td img {
+  height: 120px;
+  border-radius: 5px;
+}
+/* Style du Header Uniformisé */
+/* --- STYLE DU HEADER ET DE LA LISTE --- */
+
+.top-page {
+  background-color: #000000;
+  border-bottom: 2px solid #ff0000; /* Ligne rouge sous le menu */
+  padding: 10px 0;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image-logo {
+  height: 120px;
+  display: block;
+}
+
+/* On cible l'UL pour enlever les puces et mettre en ligne */
+.nav ul {
+  list-style-type: none; /* SUPPRIME LES PUCES */
+  display: flex; /* ALIGNE HORIZONTALEMENT */
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* ESPACE ENTRE LES LIENS */
+}
+
+.nav li {
+  margin: 0;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #ff0000; /* ROUGE */
+  font-family: "Sandra", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+}
+
+/* Effet au survol */
+.nav li a:hover {
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 5px;
+}
