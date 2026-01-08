@@ -38,7 +38,7 @@ body {
 /* 4. Header & Background */
 header {
   background-image: linear-gradient(var(--overlay-dark), var(--overlay-dark)),
-    url("../img/Muay_Thai_Fight_Us_Vs_Burma_(80668065).jpeg");
+    url("./img/Muay_Thai_Fight_Us_Vs_Burma_(80668065).jpeg");
   height: 100vh;
   background-size: cover;
   background-position: center;
